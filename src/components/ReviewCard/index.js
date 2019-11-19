@@ -8,7 +8,7 @@ const ReviewCard = props => (
     <Star starWidth={props.rating} />
     <Name>{props.author}</Name>
     <Date>
-      <Moment format="MMMM YYYY">{props.publish_date}</Moment>
+      <Moment format="MMMM Do YYYY">{props.publish_date}</Moment>
     </Date>
     <Body>{props.body}</Body>
   </Card>
