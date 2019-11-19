@@ -8,7 +8,7 @@ import {
   SeeAll
 } from "./styles";
 import { Card } from "../ReviewCardSpotlight/styles";
-import { Heading, Paragraph } from "../../styling";
+import { Heading } from "../../styling";
 import ReviewCard from "../ReviewCard";
 import ReviewCardSpotlight from "../ReviewCardSpotlight";
 
@@ -76,7 +76,6 @@ class Reviews extends React.Component {
     return (
       <ReviewsCont>
         <Heading>Reviews</Heading>
-        <Paragraph>Stars</Paragraph>
         <ReviewCardWrapSpotlight
           // index of object * total width / number of elements
           style={{
@@ -86,6 +85,7 @@ class Reviews extends React.Component {
           {listings.slice(0, 10).map(listings => {
             return (
               <ReviewCardSpotlight
+                key={listings.id}
                 naming={listings.id === active ? "active" : ""}
                 {...listings}
               />
@@ -102,7 +102,7 @@ class Reviews extends React.Component {
         {this.state.seeAll && (
           <ReviewCardWrap>
             {listings.map(listings => {
-              return <ReviewCard {...listings} />;
+              return <ReviewCard key={listings.id} {...listings} />;
             })}
           </ReviewCardWrap>
         )}
