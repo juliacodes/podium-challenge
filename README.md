@@ -1,15 +1,15 @@
 # Podium Challenge - Shakespeare Front End
 
-## Hi there! Thanks for taking the time to review this project, I had quite a bit of fun making it, and I'm looking forward to sharing it with you.
+Hi there! :smiley:Thanks for taking the time to review this project, I had quite a bit of fun making it, and I'm looking forward to sharing it with you.
 
-I built this project with React and styled it with Styled-Components.
+> I built this project with React and styled it with Styled-Components.
 
 ## Viewing Options
 
 There are two ways to view my site.
 
 1. Running Locally
-   - Download the folder & navigate to the folder
+   - Download the folder & navigate to it
    - run `yarn add react` in your terminal
    - followed by `yarn install` to add dependencies
    - then run `yarn start` to launch the local server
