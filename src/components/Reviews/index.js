@@ -41,6 +41,7 @@ class Reviews extends React.Component {
   }
 
   nextRev = () => {
+    // when next button is pressed
     let newIndex = 0;
     this.state.index !== 10
       ? (newIndex = this.state.index + 1)
@@ -72,7 +73,7 @@ class Reviews extends React.Component {
   };
 
   render() {
-    const { listings, active, index } = this.state;
+    const { listings, active, index, seeAll } = this.state;
     return (
       <ReviewsCont>
         <Heading>Reviews</Heading>
@@ -99,7 +100,7 @@ class Reviews extends React.Component {
           <Button onClick={() => this.prevRev()}>Previous</Button>
           <Button onClick={() => this.nextRev()}>Next</Button>
         </ButtonCont>
-        {this.state.seeAll && (
+        {seeAll && ( // conditional render if seeAll is clicked
           <ReviewCardWrap>
             {listings.map(listings => {
               return <ReviewCard key={listings.id} {...listings} />;

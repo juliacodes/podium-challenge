@@ -4,7 +4,7 @@ import Moment from "react-moment";
 import Star from "../Star";
 
 const ReviewCard = props => (
-  <Card key={props.id}>
+  <Card>
     <Star starWidth={props.rating} />
     <Name>{props.author}</Name>
     <Date>

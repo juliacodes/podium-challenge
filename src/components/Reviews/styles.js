@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { QUERIES } from "../../styling";
 
 export const ReviewsCont = styled.div`
@@ -41,6 +41,7 @@ export const ReviewCardWrapSpotlight = styled.div`
 export const ButtonCont = styled.div`
   margin: 0 auto;
 `;
+
 export const Button = styled.button`
   width: 100px;
   padding: 10px 0;

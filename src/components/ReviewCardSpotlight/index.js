@@ -5,7 +5,7 @@ import Moment from "react-moment";
 import Star from "../Star";
 
 const ReviewCardSpotlight = props => (
-  <Card id={props.id} className={props.naming} key={props.id}>
+  <Card className={props.naming}>
     <Star starWidth={props.rating} />
     <Name>{props.author}</Name>
     <Date>
