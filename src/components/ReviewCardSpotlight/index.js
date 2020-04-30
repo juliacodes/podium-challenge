@@ -5,7 +5,7 @@ import Moment from "react-moment";
 import Star from "../Star";
 
 const ReviewCardSpotlight = props => (
-  <Card className={props.naming}>
+  <Card onClick={() => props.onClick(props.key)} className={props.naming}>
     <Star starWidth={props.rating} />
     <Name>{props.author}</Name>
     <Date>
